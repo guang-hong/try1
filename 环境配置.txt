@@ -1,0 +1,6 @@
+pip install torch==1.13.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install deepchem==2.6.1
+pip install  dgl==1.1.2 -f https://data.dgl.ai/wheels/cu121/repo.html
+pip install rdkit==2022.3.5
+pip install scikit-learn
+pip install setuptools==60.0

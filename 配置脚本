@@ -1,0 +1,11 @@
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install dglteam/label/cu121::dgl
+pip install deepchem
+pip install schnetpack
+
+pip install pytorch_lightning==2.1
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+conda install dglteam::dgl-cuda11.7
+pip install deepchem
+pip install schnetpack
