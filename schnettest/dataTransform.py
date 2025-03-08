@@ -225,13 +225,13 @@ if __name__ == '__main__':
         converter = spk.interfaces.AtomsConverter(neighbor_list=trn.ASENeighborList(cutoff=5.), dtype=torch.float32)
 
 
-        inputs = converter(atoms)
+        # inputs = converter(atoms)
+        #
+        # print('Keys:', list(inputs.keys()))
+        #
+        # pred = best_model(inputs)
 
-        print('Keys:', list(inputs.keys()))
-
-        pred = best_model(inputs)
-
-        print('Prediction:', pred[QM9.U0])
+        # print('Prediction:', pred[QM9.U0])
 
         calculator = spk.interfaces.SpkCalculator(
             model_file=os.path.join(qm9tut, "best_inference_model"),  # path to model
