@@ -23,7 +23,7 @@ if __name__ == '__main__':
             trn.RemoveOffsets(QM9.U0, remove_mean=True, remove_atomrefs=True),  ### 预处理，去除能量的偏移量
             trn.CastTo32()
         ],
-        property_units={QM9.U0: 'eV'},
+        property_units={QM9.U0: 'eV'},  ### U0 通常指的是在零点能校正下的单点能量（即经过零点振动能校正的能量）
         num_workers=1,
         split_file=os.path.join(qm9tut, "split.npz"),
         pin_memory=True, # set to false, when not using a GPU
