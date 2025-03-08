@@ -6,6 +6,7 @@ pip install schnetpack
 
 pip install pytorch_lightning==2.1
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
-conda install dglteam::dgl-cuda11.7
+pip install "dgl_cu117-0.9.1.post1-cp38-cp38-manylinux1_x86_64.whl"
+#conda install dglteam::dgl-cuda11.7
 pip install deepchem
 pip install schnetpack
